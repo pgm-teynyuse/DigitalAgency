@@ -1,0 +1,331 @@
+/* karla-regular - latin */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/karla-v23-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/karla-v23-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/karla-v23-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/karla-v23-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/karla-v23-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/karla-v23-latin-regular.svg#Karla') format('svg');
+    /* Legacy iOS */
+}
+
+/* karla-800 - latin */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/karla-v23-latin-800.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/karla-v23-latin-800.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/karla-v23-latin-800.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/karla-v23-latin-800.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/karla-v23-latin-800.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/karla-v23-latin-800.svg#Karla') format('svg');
+    /* Legacy iOS */
+}
+
+body{
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+    from {
+    opacity:0;
+    transform: translateY(-10px);
+    }
+
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    margin: auto;
+    font-family: 'Karla';
+    font-style: normal;
+    max-width: 70rem;
+    width: 100%;
+}
+.header{
+    padding: 2rem 2rem 2rem 1rem;
+}
+.mindmap{
+    position: absolute;
+    margin-top: -18rem;
+    margin-left: 35rem;
+    width: 36rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px 20px;
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Karla';
+    font-weight: 800;
+    font-size: 1.25rem
+
+}
+nav ul li{
+    padding: 10px 10px 0px 10px;
+    list-style: none;
+    display: inline-block;
+    font-family: 'Karla';
+    font-weight: 400;
+    font-size: 1rem
+}
+a{
+    color: hsla(0, 0%, 0%, 0.6);
+    text-decoration: none;
+}
+.content{
+    max-width: 70rem;
+    margin: auto;
+    margin-top: 15px;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 16px;
+    border: 1px solid hsl(0, 0%, 0%)
+}
+h2{
+    line-height: 3rem;
+    padding-bottom: 2rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Karla';
+    font-style: bold;
+    font-weight: 800;
+    font-size: 48px
+    
+}
+.textbox{
+    color: hsl(0, 0%, 0%);
+    font-family: 'Karla';
+    font-style: normal;
+}
+.textbox p{
+    line-height: 1.25rem;
+    padding-left: 40rem;
+    text-align: right;
+}
+h3{
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 10px;
+    padding: 1rem 0em 0rem 2rem;
+}
+.team{
+    align-items:flex-start;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 1rem;
+    flex-grow: 15;
+    max-width: auto;
+    margin-top: 25px;
+    margin-bottom: 3rem;
+}
+
+.group .card{
+    max-width: 300px;
+    height: 170px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    border: 1px solid hsl(0, 0%, 0%);
+    flex-direction: column;
+    display: flex;
+    box-shadow: 0,5px 202px hsl(0, 0%, 0%);
+    transition: 0.5s ease-in-out;
+}
+.group .card:hover {
+    height: 420px;
+}
+.group .card .imgbx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+.group .card .conton {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.group .card:hover .conton {
+    margin-top: 0px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.about{
+    margin: auto;
+    margin-top: 25px;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 16px;
+    border: 1px solid hsl(0, 0%, 0%)
+}
+nav li {
+    padding-bottom: 0,1px;
+    display: inline-block;
+    position: relative;
+}
+
+nav li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: hsl(0, 0%, 0%);
+    transition: width 0.5s ease-out;
+}
+
+nav li:hover::before {
+    width: 100%;
+}
+
+.borderimage {
+    padding: 3rem 2rem 0rem 1rem;
+}
+.border{
+    vertical-align: bottom;
+    text-align: center;
+    padding: 2rem 2rem 2rem 1rem;
+}
+.projects{
+    max-width: 70rem;
+    height:200px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 16px;
+    border: 1px solid hsl(0, 0%, 0%)
+}
+.files {
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 1rem;
+    flex-grow: 15;
+    max-width: auto;
+    margin-top: 25px;
+}
+
+.item .square {
+    max-width: 250px;
+    height: 250px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    border: 1px solid hsl(0, 0%, 0%);
+    flex-direction: column;
+    display: flex;
+    box-shadow: 0, 5px 202px hsl(0, 0%, 0%);
+    transition: 0.5s ease-in-out;
+}
+
+.item .square:hover {
+    height: 280px;
+}
+
+.item .square .pro{
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.item .square .inside {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.item .square:hover .inside{
+    margin: -70px;
+    visibility: visible;
+    opacity: 1;
+}
+.contact{
+    max-width: 70rem;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 16px;
+    border: 1px solid hsl(0, 0%, 0%)
+}
+.mapimage{
+    width: fit-content;
+    overflow: hidden;
+}
+.contact h3 {
+    padding-bottom: 0.5rem;
+}
+
+.instagram{
+    width: 2rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.contact p{
+    padding: 2rem 2rem 2rem 2.5rem;
+}
+.socials{
+    display: flex;
+    padding-left: 1.5rem;
+}
+.insta{
+    margin-right: 5px;
+    width: 50px;
+    transition: 0.5s;
+}
+.socials .insta:hover {
+    width: 80px;
+    transition: 0.5s;
+}
+.socials .facebook {
+    margin-right: 5px;
+    width: 50px;
+    transition: 0.5s;
+}
+
+.socials .facebook:hover {
+    margin-right: 5px;
+    width: 80px;
+    transition: 0.5s;
+}
+.Linkd {
+    margin-right: 5px;
+    width: 50px;
+    transition: 0.5s;
+}
+
+.Linkd:hover {
+    width: 80px;
+    transition: 0.5s;
+}
